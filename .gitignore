@@ -1,0 +1,17 @@
+# Carpeta de compilación
+target/
+
+# Archivos de la Máquina Virtual de Java
+*.class
+*.log
+
+# Configuración de VS Code
+.vscode/
+.project
+.classpath
+.settings/
+bin/
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
