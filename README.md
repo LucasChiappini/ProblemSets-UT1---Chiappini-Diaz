@@ -10,12 +10,14 @@ Repositorio con ejercicios correspondientes a la materia **Algoritmos y Estructu
 ## Estructura del proyecto
 parten desde src/
 ### App
+
   main/
      └── java/
          └── com/
              └── problems/
                  └── App.java
 ### Test
+
  └── test/
      └── java/
          └── com/
