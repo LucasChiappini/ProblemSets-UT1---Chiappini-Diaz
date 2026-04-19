@@ -4,7 +4,8 @@ public class Ejercicio19 {
 
     public static void ejecutar() {
         System.out.println("--- Iniciando Ejercicio 19 ---");
-        
+
+        ControlCorchetes.ejecutar19(new String[0]);
 
         System.out.println("Ejercicio 19 finalizado con éxito.");
     }

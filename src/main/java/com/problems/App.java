@@ -10,7 +10,6 @@ import com.problems.listas.ejercicio23.Ejercicio23;
 import com.problems.pilas.ejercicio19.Ejercicio19;
 import com.problems.pilas.ejercicio26.Ejercicio26;
 
-
 public class App {
 
     public static void main(String[] args) {
@@ -20,9 +19,13 @@ public class App {
 
         do {
             System.out.println("\n=== Ejercicios entregables ===");
-            for (int i = 1; i <= 7; i++) {
-                System.out.println(i + " - Ejercicio " + i);
-            }
+            System.out.println("1 - Ejercicio 17 (Listas)");
+            System.out.println("2 - Ejercicio 18 (Listas)");
+            System.out.println("3 - Ejercicio 23 (Listas)");
+            System.out.println("4 - Ejercicio 19 (Pilas)");
+            System.out.println("5 - Ejercicio 26 (Pilas)");
+            System.out.println("6 - Ejercicio 27 (Colas)");
+            System.out.println("7 - Ejercicio 24 (Conjuntos)");
             System.out.println("0 - Salir");
 
             System.out.print("Selecciona una opcion: ");
@@ -31,36 +34,27 @@ public class App {
                 opcion = sc.nextInt();
 
                 switch (opcion) {
-                    case 1:
-                        System.out.print("----- Listas ------ ");
+                    case 1 -> {
+                        System.out.println("----- Listas ------ ");
                         Ejercicio17.ejecutar();
-                        break;
-                    case 2:
-                        Ejercicio18.ejecutar();
-                        break;
-                    case 3:
-                        Ejercicio23.ejecutar();
-                        break;
-                    case 4:
-                        System.out.print("----- Pilas ------ ");
+                    }
+                    case 2 -> Ejercicio18.ejecutar();
+                    case 3 -> Ejercicio23.ejecutar();
+                    case 4 -> {
+                        System.out.println("----- Pilas ------ ");
                         Ejercicio19.ejecutar();
-                        break;
-                    case 5:
-                        Ejercicio26.ejecutar();
-                        break;
-                    case 6:
-                        System.out.print("----- Colas ------ ");
+                    }
+                    case 5 -> Ejercicio26.ejecutar();
+                    case 6 -> {
+                        System.out.println("----- Colas ------ ");
                         Ejercicio27.ejecutar();
-                        break;
-                    case 7:
-                        System.out.print("----- Conjuntos ------ ");
+                    }
+                    case 7 -> {
+                        System.out.println("----- Conjuntos ------ ");
                         Ejercicio24.ejecutar();
-                        break;
-                    case 0:
-                        System.out.println("Saliendo...");
-                        break;
-                    default:
-                        System.out.println("Opcion invalida");
+                    }
+                    case 0 -> System.out.println("Saliendo...");
+                    default -> System.out.println("Opcion invalida");
                 }
 
             } else {
