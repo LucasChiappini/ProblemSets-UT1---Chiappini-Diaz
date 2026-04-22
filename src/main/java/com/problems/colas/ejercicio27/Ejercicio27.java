@@ -4,7 +4,7 @@ public class Ejercicio27 {
 
     public static void ejecutar() {
         System.out.println("--- Iniciando Ejercicio 27 ---");
-
+        System.out.println("Leer readme de este ejercicio.");
         System.out.println("Ejercicio 27 finalizado con éxito.");
     }
 }
