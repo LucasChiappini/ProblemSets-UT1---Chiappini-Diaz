@@ -63,4 +63,38 @@ public class Lista<T> {
             actual = actual.siguiente;
         }
     }
+
+    //Ejercicio 18
+    // Quita un elemento de la lista y lo devuelve (si existe)
+    public T quitar(java.util.function.Predicate<T> condicion) {
+
+        Nodo<T> actual = primero;
+        Nodo<T> anterior = null;
+
+        // Recorremos la lista
+        while (actual != null) {
+
+            // Si encontramos el elemento
+            if (condicion.test(actual.dato)) {
+
+                // Es el primero
+                if (anterior == null) {
+                    primero = actual.siguiente;
+                } // Esta en el medio o final
+                else {
+                    anterior.siguiente = actual.siguiente;
+                }
+
+                // Devolvemos el elemento para reutilizarlo
+                return actual.dato;
+            }
+
+            anterior = actual;
+            actual = actual.siguiente;
+        }
+
+        // Si no se encontró
+        return null;
+    }
+
 }
