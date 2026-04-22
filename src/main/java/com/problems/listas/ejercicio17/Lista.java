@@ -97,4 +97,43 @@ public class Lista<T> {
         return null;
     }
 
+    //Ejercicio 23
+    public int cantidad() {
+        int contador = 0;
+        Nodo<T> actual = primero;
+
+        while (actual != null) {
+            contador++;
+            actual = actual.siguiente;
+        }
+
+        return contador;
+    }
+
+    public boolean estaVacia() {
+        return primero == null;
+    }
+
+    public void imprimir(String sep) {
+        Nodo<T> actual = primero;
+
+        while (actual != null) {
+            System.out.print(actual.dato + sep);
+            actual = actual.siguiente;
+        }
+    }
+
+    public T siguienteDe(T dato) {
+        Nodo<T> actual = primero;
+
+        while (actual != null && actual.siguiente != null) {
+            if (actual.dato.equals(dato)) {
+                return actual.siguiente.dato;
+            }
+            actual = actual.siguiente;
+        }
+
+        return null;
+    }
+
 }
