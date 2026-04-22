@@ -20,7 +20,7 @@ public class Lista<T> {
         }
     }
 
-    public T buscar(Predicate<T> condicion) {
+    public T buscar(Predicate<T> condicion) { // con predicate esperamos y devuelve un true o false
         Nodo<T> actual = primero;
 
         while (actual != null) {
@@ -33,7 +33,7 @@ public class Lista<T> {
         return null;
     }
 
-    public boolean eliminar(Predicate<T> condicion) {
+    public boolean eliminar(Predicate<T> condicion) { 
         Nodo<T> actual = primero;
         Nodo<T> anterior = null;
 
@@ -55,7 +55,7 @@ public class Lista<T> {
         return false;
     }
 
-    public void recorrer(java.util.function.Consumer<T> accion) {
+    public void recorrer(java.util.function.Consumer<T> accion) { // el consumer en lambda sirve para hacer algo print, guardar, etc
         Nodo<T> actual = primero;
 
         while (actual != null) {
