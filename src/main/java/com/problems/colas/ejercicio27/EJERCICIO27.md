@@ -59,6 +59,7 @@ Para entender un poco mas recomendamos el video del canal de Dalia Silva.
 ### Agregar dato
 <img width="1337" height="970" alt="image" src="https://github.com/user-attachments/assets/86264c04-3864-48fb-afcb-83305b036c83" />
 link: https://www.youtube.com/watch?v=a3i4Y5Sa_p4&list=TLPQMjIwNDIwMjZrjfbjjWaBeA&index=3
+
 ### Eliminar dato
 <img width="1624" height="1017" alt="image" src="https://github.com/user-attachments/assets/4047babd-e711-4b72-83a6-10bcdf8f7e4b" />
 link: https://www.youtube.com/watch?v=Wv6bw2bpXas&list=TLPQMjIwNDIwMjZrjfbjjWaBeA&index=3
